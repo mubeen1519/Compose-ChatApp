@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val launcher = rememberLauncherForActivityResult(
+            /*val launcher = rememberLauncherForActivityResult(
                 ActivityResultContracts.RequestPermission()
             ) { isGranted ->
                 if (isGranted) {
@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
                 // permission granted
             } else {
                 launcher.launch(Manifest.permission.POST_NOTIFICATIONS)
-            }
+            }*/
             App(this, rememberNavController())
         }
     }
